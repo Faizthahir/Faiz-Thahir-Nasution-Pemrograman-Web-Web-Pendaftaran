@@ -1,0 +1,173 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #3333cc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% ;
+    height: 10vh; 
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 7vh; 
+    height: 7vh;
+    margin-right: 1.5vw;
+}
+
+.title h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+.navbar-right {
+    display: flex;
+    gap: 1vw;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1vh 1.5vw;
+    transition: background 0.3s;
+}
+
+.navbar-right a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-left img {
+        width: 7vh;
+        height: 7vh;
+        margin-bottom: 1vh;
+    }
+
+    .title h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 1vh;
+        padding-top: 1vh;
+    }
+
+    .navbar-right a {
+        display: block;
+        padding: 1vh 0;
+    }
+}
+
+main {
+    width: 90vw;
+    max-width: 1024px;
+    margin: 5vh auto;
+}
+
+/* Kartu informasi */
+.card {
+    background: white;
+    padding: 3vh 4vw;
+    margin-bottom: 3vh;
+    border-radius: 1rem;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #0033cc;
+    margin-bottom: 1vh;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 2vw;
+}
+
+.card ul li {
+    margin: 1vh 0;
+    font-size: 1rem;
+}
+
+
+footer {
+    background-color: #0033cc;
+    color: white;
+    padding: 7vh 5vw;
+    margin-top: 5vh;
+    text-align: left;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #ffdd00;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-btn {
+        width: 100%;
+        padding: 1.5vh;
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 95vw;
+    }
+
+    .card {
+        padding: 2vh 3vw;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .card ul li {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 5vh 5vw;
+    }
+}
